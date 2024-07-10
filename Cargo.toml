@@ -10,6 +10,7 @@ directories = "5.0.1"
 fs-err = "2.11.0"
 gix = "0.63.0"
 octocrab = "0.38.0"
+regex = "1.10.5"
 serde = { version = "1.0.204", features = ["derive"] }
 tokio = { version = "1.38.0", features = ["full"] }
 toml = { version = "0.8.14", features = ["indexmap", "preserve_order"] }
