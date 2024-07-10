@@ -60,7 +60,7 @@ async fn main() -> Result<()> {
     match cmd {
         Command::Pr { title, branch, base } => {
             
-            let base = base.as_ref().map(|s| s.as_str()).unwrap_or_else(|| config.default_base.as_ref().map(|s| s.as_str()).unwrap_or("base"));
+            let base = base.as_ref().map(|s| s.as_str()).unwrap_or_else(|| config.default_base.as_ref().map(|s| s.as_str()).unwrap_or("main"));
             dbg!(repo.head_commit()?);
             let Some(head_name) = repo.head_name()?else {
                 bail!("Must be on a named branch, otherwise this won't work")
