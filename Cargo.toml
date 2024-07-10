@@ -1,0 +1,15 @@
+[package]
+name = "prda"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.9", features = ["derive", "std", "env"] }
+color-eyre = "0.6.3"
+directories = "5.0.1"
+fs-err = "2.11.0"
+gix = "0.63.0"
+octocrab = "0.38.0"
+serde = { version = "1.0.204", features = ["derive"] }
+tokio = { version = "1.38.0", features = ["full"] }
+toml = { version = "0.8.14", features = ["indexmap", "preserve_order"] }
